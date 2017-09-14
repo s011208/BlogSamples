@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- mvp demo -->
+    <dimen name="mvp_demo_activity_padding_top">100dp</dimen>
+    <dimen name="mvp_demo_activity_edit_text_width">300dp</dimen>
+    <dimen name="mvp_demo_activity_item_margin_top">8dp</dimen>
+    <dimen name="mvp_demo_activity_button_margin">8dp</dimen>
+</resources>

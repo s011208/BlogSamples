@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/mvp_demo_activity_padding_top">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="@dimen/mvp_demo_activity_edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/mvp_demo_activity_edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:paddingTop="@dimen/mvp_demo_activity_item_margin_top" />
+
+    <LinearLayout
+        android:layout_width="@dimen/mvp_demo_activity_edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user"
+        android:layout_below="@id/password"
+        android:layout_marginTop="@dimen/mvp_demo_activity_item_margin_top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mvp_demo_activity_button_margin"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/mvp_demo_activity_login" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mvp_demo_activity_button_margin"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/mvp_demo_activity_clear" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

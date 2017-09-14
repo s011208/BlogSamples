@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Blog samples</string>
+
+    <!-- all samples list -->
+    <string name="activity_sample_list_mvp">"MVP"</string>
+    <string name="activity_sample_list_dagger2">"Dagger2"</string>
+    <string name="activity_sample_list_butter_knife">"Butter knife"</string>
+    <string name="activity_sample_list_okhttp">"OkHttp"</string>
+    <string name="activity_sample_list_mockito">"Mockito"</string>
+
+    <!-- mvp demo -->
+    <string name="mvp_demo_activity_login">"Log in"</string>
+    <string name="mvp_demo_activity_clear">"Clear"</string>
+    <string name="mvp_demo_activity_login_success">"Login success"</string>
+    <string name="mvp_demo_activity_login_fail">"Login fail"</string>
+</resources>
