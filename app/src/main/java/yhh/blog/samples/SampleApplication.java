@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.Context;
 import android.support.annotation.Nullable;
 
+import yhh.blog.samples.butterknife.ButterKnifeApplication;
 import yhh.blog.samples.dagger2.Dagger2Application;
 import yhh.blog.samples.mvp.MVPApplication;
 
@@ -21,6 +22,8 @@ public class SampleApplication extends Application {
                 mApplication = new MVPApplication();
             } else if ("yhh.blog.samples:dagger2".equals(processName)) {
                 mApplication = new Dagger2Application();
+            } else if ("yhh.blog.samples:butterknife".equals(processName)) {
+                mApplication = new ButterKnifeApplication();
             }
         }
 

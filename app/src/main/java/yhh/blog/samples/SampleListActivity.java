@@ -11,6 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import yhh.blog.samples.butterknife.ButterKnifeMainActivity;
 import yhh.blog.samples.dagger2.Dagger2Activity;
 import yhh.blog.samples.mvp.view.MVPDemoActivity;
 
@@ -25,7 +26,7 @@ public class SampleListActivity extends AppCompatActivity {
         items.add(getString(R.string.activity_sample_list_mvp));
         items.add(getString(R.string.activity_sample_list_dagger2));
         items.add(getString(R.string.activity_sample_list_mockito));
-        items.add(getString(R.string.activity_sample_list_butter_knife));
+        items.add(getString(R.string.activity_sample_list_butterknife));
         items.add(getString(R.string.activity_sample_list_okhttp));
 
         ListView listView = (ListView) findViewById(R.id.sample_list);
@@ -37,6 +38,8 @@ public class SampleListActivity extends AppCompatActivity {
                     startActivity(new Intent(SampleListActivity.this, MVPDemoActivity.class));
                 } else if (i == 1) {
                     startActivity(new Intent(SampleListActivity.this, Dagger2Activity.class));
+                } else if (i == 2) {
+                    startActivity(new Intent(SampleListActivity.this, ButterKnifeMainActivity.class));
                 }
             }
         });

@@ -6,4 +6,7 @@
     <dimen name="mvp_demo_activity_edit_text_width">300dp</dimen>
     <dimen name="mvp_demo_activity_item_margin_top">8dp</dimen>
     <dimen name="mvp_demo_activity_button_margin">8dp</dimen>
+
+    <!-- butter knife -->
+    <dimen name="butter_knife_activity_binding_dimen">16dp</dimen>
 </resources>

@@ -4,7 +4,7 @@
     <!-- all samples list -->
     <string name="activity_sample_list_mvp">"MVP"</string>
     <string name="activity_sample_list_dagger2">"Dagger2"</string>
-    <string name="activity_sample_list_butter_knife">"Butter knife"</string>
+    <string name="activity_sample_list_butterknife">"ButterKnife"</string>
     <string name="activity_sample_list_okhttp">"OkHttp"</string>
     <string name="activity_sample_list_mockito">"Mockito"</string>
 
@@ -23,5 +23,19 @@
     <string name="dagger2_activity_password">"Password: %1$s"</string>
     <string name="dagger2_activity_before_inject">"Before inject\n"</string>
     <string name="dagger2_activity_after_inject">"\nAfter inject\n"</string>
+
+    <!-- butter knife -->
+    <string name="butter_knife_main_activity_bind_activity_view">"Bind activity view"</string>
+    <string name="butter_knife_main_activity_bind_resources">"Bind resources"</string>
+    <string name="butter_knife_main_activity_bind_fragment">"Bind fragment"</string>
+
+    <string name="butter_knife_activity_text">"Butter Knife Text"</string>
+    <string name="butter_knife_activity_disable_input">"Disable input"</string>
+    <string name="butter_knife_activity_enable_input">"Enable input"</string>
+    <string name="butter_knife_activity_bind_string">"Bind string resource"</string>
+    <string name="butter_knife_activity_bind_dimen">"Bind dimen resource"</string>
+    <string name="butter_knife_activity_bind_string_array">"Bind string array resource"</string>
+
+    <string name="butter_knife_activity_binding_string">"Binding~"</string>
 
 </resources>

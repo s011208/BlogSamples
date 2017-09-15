@@ -24,13 +24,37 @@
         <activity
             android:name=".mvp.view.MVPDemoActivity"
             android:exported="true"
+            android:label="@string/activity_sample_list_mvp"
             android:process=":mvp" />
 
         <!-- dagger2 demo -->
         <activity
             android:name=".dagger2.Dagger2Activity"
             android:exported="true"
+            android:label="@string/activity_sample_list_dagger2"
             android:process=":dagger2" />
+
+        <!-- butter knife -->
+        <activity
+            android:name=".butterknife.ButterKnifeMainActivity"
+            android:exported="true"
+            android:label="@string/activity_sample_list_butterknife"
+            android:process=":butterknife" />
+
+        <activity
+            android:name=".butterknife.samples.BindActivityViewActivity"
+            android:label="@string/activity_sample_list_butterknife"
+            android:process=":butterknife" />
+
+        <activity
+            android:name=".butterknife.samples.BindXMLResourceActivity"
+            android:label="@string/activity_sample_list_butterknife"
+            android:process=":butterknife" />
+
+        <activity
+            android:name=".butterknife.samples.BindFragmentActivity"
+            android:label="@string/activity_sample_list_butterknife"
+            android:process=":butterknife" />
     </application>
 
 </manifest>

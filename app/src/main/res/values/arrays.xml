@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- butter knife -->
+    <string-array name="butter_knife_main_activity_samples">
+        <item>@string/butter_knife_main_activity_bind_activity_view</item>
+        <item>@string/butter_knife_main_activity_bind_resources</item>
+        <item>@string/butter_knife_main_activity_bind_fragment</item>
+    </string-array>
+
+    <string-array name="butter_knife_activity_binding_array">
+        <item>Binding item1</item>
+        <item>Binding item2</item>
+        <item>Binding item3</item>
+    </string-array>
+</resources>
