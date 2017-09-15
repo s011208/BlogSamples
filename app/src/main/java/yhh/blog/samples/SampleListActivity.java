@@ -11,6 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import yhh.blog.samples.dagger2.Dagger2Activity;
 import yhh.blog.samples.mvp.view.MVPDemoActivity;
 
 public class SampleListActivity extends AppCompatActivity {
@@ -34,6 +35,8 @@ public class SampleListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
                     startActivity(new Intent(SampleListActivity.this, MVPDemoActivity.class));
+                } else if (i == 1) {
+                    startActivity(new Intent(SampleListActivity.this, Dagger2Activity.class));
                 }
             }
         });

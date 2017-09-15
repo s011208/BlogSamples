@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.Context;
 import android.support.annotation.Nullable;
 
+import yhh.blog.samples.dagger2.Dagger2Application;
 import yhh.blog.samples.mvp.MVPApplication;
 
 public class SampleApplication extends Application {
@@ -16,8 +17,10 @@ public class SampleApplication extends Application {
         super.onCreate();
         final String processName = getProcessName();
         if (processName != null) {
-            if (processName.endsWith(":mvp")) {
+            if ("yhh.blog.samples:mvp".equals(processName)) {
                 mApplication = new MVPApplication();
+            } else if ("yhh.blog.samples:dagger2".equals(processName)) {
+                mApplication = new Dagger2Application();
             }
         }
 
@@ -36,5 +39,10 @@ public class SampleApplication extends Application {
             }
         }
         return null;
+    }
+
+    @Nullable
+    public BaseApplication getBaseApplication() {
+        return mApplication;
     }
 }

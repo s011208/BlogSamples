@@ -17,4 +17,11 @@
     <string name="mvp_demo_activity_password_hint">"password"</string>
     <string name="mvp_demo_activity_please_enter_username">"Please enter user name"</string>
     <string name="mvp_demo_activity_please_enter_password">"Please enter password"</string>
+
+    <!-- dagger2 demo -->
+    <string name="dagger2_activity_username">"Username: %1$s"</string>
+    <string name="dagger2_activity_password">"Password: %1$s"</string>
+    <string name="dagger2_activity_before_inject">"Before inject\n"</string>
+    <string name="dagger2_activity_after_inject">"\nAfter inject\n"</string>
+
 </resources>
