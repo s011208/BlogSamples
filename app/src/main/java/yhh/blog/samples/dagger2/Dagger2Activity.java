@@ -7,7 +7,9 @@ import android.widget.TextView;
 
 import yhh.blog.samples.R;
 import yhh.blog.samples.SampleApplication;
+import yhh.blog.samples.dagger2.component.DaggerApplicationComponent;
 import yhh.blog.samples.dagger2.component.DaggerMockApplicationComponent;
+import yhh.blog.samples.dagger2.module.ApplicationModule;
 import yhh.blog.samples.dagger2.module.MockApplicationModule;
 
 public class Dagger2Activity extends AppCompatActivity {
@@ -40,6 +42,14 @@ public class Dagger2Activity extends AppCompatActivity {
 
         mUserNameAfter.setText(getString(R.string.dagger2_activity_username, user.getUserName()));
         mPasswordAfter.setText(getString(R.string.dagger2_activity_password, user.getPassword()));
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ((Dagger2Application) ((SampleApplication) getApplication()).getBaseApplication())
+                .setApplicationComponent(DaggerApplicationComponent.builder()
+                        .applicationModule(new ApplicationModule(getApplication())).build());
     }
 
     private User getUserFromApplication() {
