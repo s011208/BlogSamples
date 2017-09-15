@@ -31,6 +31,8 @@ public class SampleListActivity extends AppCompatActivity {
 //        items.add(getString(R.string.activity_sample_list_volley));
 //        items.add(getString(R.string.activity_sample_list_rxjava));
 //        items.add(getString(R.string.activity_sample_list_async));
+//        items.add(getString(R.string.activity_sample_list_gson));
+//        items.add(getString(R.string.activity_sample_list_jackson));
 
 
         ListView listView = (ListView) findViewById(R.id.sample_list);
