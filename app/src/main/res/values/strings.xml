@@ -7,6 +7,9 @@
     <string name="activity_sample_list_butterknife">"ButterKnife"</string>
     <string name="activity_sample_list_okhttp">"OkHttp"</string>
     <string name="activity_sample_list_mockito">"Mockito"</string>
+    <string name="activity_sample_list_volley">"Volley"</string>
+    <string name="activity_sample_list_rxjava">"RxJava"</string>
+    <string name="activity_sample_list_async">"AsyncTask"</string>
 
     <!-- mvp demo -->
     <string name="mvp_demo_activity_login">"Log in"</string>

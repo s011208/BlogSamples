@@ -25,9 +25,13 @@ public class SampleListActivity extends AppCompatActivity {
         final List<String> items = new ArrayList<>();
         items.add(getString(R.string.activity_sample_list_mvp));
         items.add(getString(R.string.activity_sample_list_dagger2));
-        items.add(getString(R.string.activity_sample_list_mockito));
         items.add(getString(R.string.activity_sample_list_butterknife));
-        items.add(getString(R.string.activity_sample_list_okhttp));
+//        items.add(getString(R.string.activity_sample_list_mockito));
+//        items.add(getString(R.string.activity_sample_list_okhttp));
+//        items.add(getString(R.string.activity_sample_list_volley));
+//        items.add(getString(R.string.activity_sample_list_rxjava));
+//        items.add(getString(R.string.activity_sample_list_async));
+
 
         ListView listView = (ListView) findViewById(R.id.sample_list);
         listView.setAdapter(new ArrayAdapter<>(SampleListActivity.this, android.R.layout.simple_list_item_1, items));
