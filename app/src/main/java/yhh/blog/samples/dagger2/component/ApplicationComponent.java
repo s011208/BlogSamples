@@ -12,5 +12,4 @@ import yhh.blog.samples.dagger2.module.ApplicationModule;
 @Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
     void inject(Dagger2Application application);
-    void inj(Context context);
 }
