@@ -13,4 +13,8 @@
     <string name="mvp_demo_activity_clear">"Clear"</string>
     <string name="mvp_demo_activity_login_success">"Login success"</string>
     <string name="mvp_demo_activity_login_fail">"Login fail"</string>
+    <string name="mvp_demo_activity_user_hint">"user name"</string>
+    <string name="mvp_demo_activity_password_hint">"password"</string>
+    <string name="mvp_demo_activity_please_enter_username">"Please enter user name"</string>
+    <string name="mvp_demo_activity_please_enter_password">"Please enter password"</string>
 </resources>

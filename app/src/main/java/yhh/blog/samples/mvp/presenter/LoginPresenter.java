@@ -2,6 +2,7 @@ package yhh.blog.samples.mvp.presenter;
 
 import android.os.Handler;
 import android.os.Message;
+import android.text.TextUtils;
 
 import yhh.blog.samples.R;
 import yhh.blog.samples.mvp.contract.LoginContract;
@@ -18,6 +19,15 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void login(String user, String password) {
+        if (TextUtils.isEmpty(user)) {
+            mLoginView.showToast(R.string.mvp_demo_activity_please_enter_username);
+            return;
+        }
+        if (TextUtils.isEmpty(password)) {
+            mLoginView.showToast(R.string.mvp_demo_activity_please_enter_password);
+            return;
+        }
+
         mLoginView.showLoadingView();
         mLoginModel.checkUserValid(user, password, new Handler.Callback() {
             @Override

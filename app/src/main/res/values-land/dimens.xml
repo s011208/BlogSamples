@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- mvp demo -->
+    <dimen name="mvp_demo_activity_padding_top">30dp</dimen>
+</resources>

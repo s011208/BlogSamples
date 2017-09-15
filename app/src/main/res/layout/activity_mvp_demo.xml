@@ -8,7 +8,10 @@
         android:id="@+id/user"
         android:layout_width="@dimen/mvp_demo_activity_edit_text_width"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:hint="@string/mvp_demo_activity_user_hint"
+        android:inputType="text"
+        android:maxLines="1" />
 
     <EditText
         android:id="@+id/password"
@@ -17,10 +20,13 @@
         android:layout_alignLeft="@id/user"
         android:layout_below="@id/user"
         android:layout_centerHorizontal="true"
+        android:hint="@string/mvp_demo_activity_password_hint"
         android:inputType="textPassword"
+        android:maxLines="1"
         android:paddingTop="@dimen/mvp_demo_activity_item_margin_top" />
 
     <LinearLayout
+        android:id="@+id/button_layout"
         android:layout_width="@dimen/mvp_demo_activity_edit_text_width"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/user"
@@ -49,9 +55,11 @@
 
     <ProgressBar
         android:id="@+id/progress_bar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mvp_demo_activity_item_margin_top"
         android:visibility="invisible" />
 
 </RelativeLayout>
