@@ -13,6 +13,7 @@
     <string name="activity_sample_list_jackson">"Jackson"</string>
     <string name="activity_sample_list_async">"AsyncTask"</string>
     <string name="activity_sample_list_retrofit">"RetroitFit"</string>
+    <string name="activity_sample_list_permission">"Permission"</string>
 
     <!-- mvp demo -->
     <string name="mvp_demo_activity_login">"Log in"</string>
@@ -44,4 +45,7 @@
 
     <string name="butter_knife_activity_binding_string">"Binding~"</string>
 
+    <!-- ok http -->
+    <string name="ok_http_activity_execute_directly">Execute directly</string>
+    <string name="ok_http_activity_execute_with_callback">Execute with callback</string>
 </resources>

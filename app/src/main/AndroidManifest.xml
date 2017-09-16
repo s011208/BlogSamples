@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="yhh.blog.samples">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".SampleApplication"
         android:allowBackup="true"
@@ -55,6 +57,13 @@
             android:name=".butterknife.samples.BindFragmentActivity"
             android:label="@string/activity_sample_list_butterknife"
             android:process=":butterknife" />
+
+        <!-- OkHttp -->
+        <activity
+            android:name=".okhttp.OkHttpActivity"
+            android:exported="true"
+            android:label="@string/activity_sample_list_okhttp"
+            android:process=":okhttp" />
     </application>
 
 </manifest>

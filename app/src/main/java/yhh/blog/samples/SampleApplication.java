@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import yhh.blog.samples.butterknife.ButterKnifeApplication;
 import yhh.blog.samples.dagger2.Dagger2Application;
 import yhh.blog.samples.mvp.MVPApplication;
+import yhh.blog.samples.okhttp.OkHttpApplication;
 
 public class SampleApplication extends Application {
 
@@ -24,6 +25,8 @@ public class SampleApplication extends Application {
                 mApplication = new Dagger2Application();
             } else if ("yhh.blog.samples:butterknife".equals(processName)) {
                 mApplication = new ButterKnifeApplication();
+            } else if ("yhh.blog.samples:okhttp".equals(processName)) {
+                mApplication = new OkHttpApplication();
             }
         }
 

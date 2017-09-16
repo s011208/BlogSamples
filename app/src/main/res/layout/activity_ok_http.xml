@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/center_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/execute_directly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok_http_activity_execute_directly" />
+
+    <TextView
+        android:id="@+id/execute_directly_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/center_line"
+        android:layout_below="@id/execute_directly"
+        android:ellipsize="end"
+        android:maxLines="10" />
+
+    <Button
+        android:id="@+id/execute_with_callback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_line"
+        android:text="@string/ok_http_activity_execute_with_callback" />
+
+    <TextView
+        android:id="@+id/execute_with_callback_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/execute_with_callback"
+        android:ellipsize="end"
+        android:maxLines="10" />
+</RelativeLayout>
