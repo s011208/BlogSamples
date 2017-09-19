@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.TextView;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -26,6 +28,7 @@ import io.reactivex.schedulers.Schedulers;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import yhh.blog.samples.R;
 
 /**
  * https://stackoverflow.com/questions/42757924/what-is-the-difference-between-observable-completable-and-single-in-rxjava
@@ -39,9 +42,13 @@ public class RxJavaActivity extends AppCompatActivity {
 
     private CompositeDisposable mDisposable = new CompositeDisposable();
 
+    private TextView mTextView;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rxjava2);
+        mTextView = (TextView) findViewById(R.id.status_text);
         final OkHttpClient client = new OkHttpClient();
         final Single<List<JSONObject>> queryObservable = Observable.create(new ObservableOnSubscribe<String>() {
             @Override
@@ -49,6 +56,16 @@ public class RxJavaActivity extends AppCompatActivity {
                 Response response = client.newCall(new Request.Builder().url("https://hacker-news.firebaseio.com/v0/topstories.json").build()).execute();
                 emitter.onNext(response.body().string());
                 emitter.onComplete();
+            }
+        }).doOnNext(new Consumer<String>() {
+            @Override
+            public void accept(String s) throws Exception {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mTextView.setText(mTextView.getText() + System.lineSeparator() + "get top stories from hacker news");
+                    }
+                });
             }
         }).map(new Function<String, List<Integer>>() {
             @Override
@@ -59,6 +76,16 @@ public class RxJavaActivity extends AppCompatActivity {
                     rtn.add(jsonArray.getInt(i));
                 }
                 return rtn;
+            }
+        }).doOnNext(new Consumer<List<Integer>>() {
+            @Override
+            public void accept(final List<Integer> integers) throws Exception {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mTextView.setText(mTextView.getText() + System.lineSeparator() + "get " + integers.size() + " stories' id");
+                    }
+                });
             }
         }).flatMap(new Function<List<Integer>, ObservableSource<JSONObject>>() {
             @Override
@@ -72,6 +99,20 @@ public class RxJavaActivity extends AppCompatActivity {
                     if (counter >= 30) break;
                 }
                 return Observable.fromIterable(data);
+            }
+        }).doOnNext(new Consumer<JSONObject>() {
+            @Override
+            public void accept(final JSONObject jsonObject) throws Exception {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            mTextView.setText(mTextView.getText() + System.lineSeparator() + "loading story id " + jsonObject.getInt("id"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
             }
         }).toList();
 
@@ -87,6 +128,7 @@ public class RxJavaActivity extends AppCompatActivity {
                                 Log.v(TAG, "accept, item: " + jsonObject.toString());
                             }
                         }
+                        mTextView.setText(mTextView.getText() + System.lineSeparator() + "load " + jsonObjects.size() + " stories");
                     }
                 });
         mDisposable.add(subscribe);
