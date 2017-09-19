@@ -66,10 +66,18 @@
             android:process=":okhttp" />
 
         <!-- RxJava -->
-        <activity android:name=".rxjava.RxJavaActivity"
+        <activity
+            android:name=".rxjava.RxJavaActivity"
             android:exported="true"
             android:label="@string/activity_sample_list_rxjava"
-            android:process=":rxjava"/>
+            android:process=":rxjava" />
+
+        <!-- GSON -->
+        <activity
+            android:name=".gson.GsonActivity"
+            android:exported="true"
+            android:label="@string/activity_sample_list_gson"
+            android:process=":gson" />
     </application>
 
 </manifest>

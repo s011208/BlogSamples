@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 
 import yhh.blog.samples.butterknife.ButterKnifeApplication;
 import yhh.blog.samples.dagger2.Dagger2Application;
+import yhh.blog.samples.gson.GsonApplication;
 import yhh.blog.samples.mvp.MVPApplication;
 import yhh.blog.samples.okhttp.OkHttpApplication;
 import yhh.blog.samples.rxjava.RxJavaApplication;
@@ -30,6 +31,8 @@ public class SampleApplication extends Application {
                 mApplication = new OkHttpApplication();
             } else if ("yhh.blog.samples:rxjava".equals(processName)) {
                 mApplication = new RxJavaApplication();
+            } else if ("yhh.blog.samples:gson".equals(processName)) {
+                mApplication = new GsonApplication();
             }
         }
 
