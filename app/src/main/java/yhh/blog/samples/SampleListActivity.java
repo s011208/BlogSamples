@@ -15,6 +15,7 @@ import yhh.blog.samples.butterknife.ButterKnifeMainActivity;
 import yhh.blog.samples.dagger2.Dagger2Activity;
 import yhh.blog.samples.mvp.view.MVPDemoActivity;
 import yhh.blog.samples.okhttp.OkHttpActivity;
+import yhh.blog.samples.rxjava.RxJavaActivity;
 
 public class SampleListActivity extends AppCompatActivity {
 
@@ -28,9 +29,10 @@ public class SampleListActivity extends AppCompatActivity {
         items.add(getString(R.string.activity_sample_list_dagger2));
         items.add(getString(R.string.activity_sample_list_butterknife));
         items.add(getString(R.string.activity_sample_list_okhttp));
+        items.add(getString(R.string.activity_sample_list_rxjava));
 //        items.add(getString(R.string.activity_sample_list_mockito));
 //        items.add(getString(R.string.activity_sample_list_volley));
-//        items.add(getString(R.string.activity_sample_list_rxjava));
+
 //        items.add(getString(R.string.activity_sample_list_async));
 //        items.add(getString(R.string.activity_sample_list_gson));
 //        items.add(getString(R.string.activity_sample_list_jackson));
@@ -51,6 +53,8 @@ public class SampleListActivity extends AppCompatActivity {
                     startActivity(new Intent(SampleListActivity.this, ButterKnifeMainActivity.class));
                 } else if (i == 3) {
                     startActivity(new Intent(SampleListActivity.this, OkHttpActivity.class));
+                } else if (i == 4) {
+                    startActivity(new Intent(SampleListActivity.this, RxJavaActivity.class));
                 }
             }
         });

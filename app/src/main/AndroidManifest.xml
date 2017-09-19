@@ -64,6 +64,12 @@
             android:exported="true"
             android:label="@string/activity_sample_list_okhttp"
             android:process=":okhttp" />
+
+        <!-- RxJava -->
+        <activity android:name=".rxjava.RxJavaActivity"
+            android:exported="true"
+            android:label="@string/activity_sample_list_rxjava"
+            android:process=":rxjava"/>
     </application>
 
 </manifest>
