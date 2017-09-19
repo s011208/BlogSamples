@@ -14,6 +14,7 @@
     <string name="activity_sample_list_async">"AsyncTask"</string>
     <string name="activity_sample_list_retrofit">"RetroitFit"</string>
     <string name="activity_sample_list_permission">"Permission"</string>
+    <string name="activity_sample_list_ixjava">"IxJava"</string>
 
     <!-- mvp demo -->
     <string name="mvp_demo_activity_login">"Log in"</string>

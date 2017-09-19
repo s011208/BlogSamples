@@ -38,6 +38,7 @@ public class SampleListActivity extends AppCompatActivity {
 //        items.add(getString(R.string.activity_sample_list_jackson));
 //        items.add(getString(R.string.activity_sample_list_retrofit));
 //        items.add(getString(R.string.activity_sample_list_permission));
+//        items.add(getString(R.string.activity_sample_list_ixjava));
 
 
         ListView listView = (ListView) findViewById(R.id.sample_list);
