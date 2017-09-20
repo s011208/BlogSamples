@@ -1,34 +1,23 @@
 package yhh.blog.samples.gson;
 
-import com.google.gson.annotations.SerializedName;
+public class HackerNewStoryNoSerial {
 
-public class User {
-
-    @SerializedName(value = "by", alternate = {"by_id"})
     private String by;
 
-    @SerializedName("descendants")
     private int descendants;
 
-    @SerializedName("id")
     private int id;
 
-    @SerializedName("kids")
     private int[] kids;
 
-    @SerializedName("score")
     private int score;
 
-    @SerializedName("time")
     private long time;
 
-    @SerializedName("title")
     private String title;
 
-    @SerializedName("type")
     private String type;
 
-    @SerializedName("url")
     private String url;
 
     public String getBy() {
