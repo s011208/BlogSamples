@@ -17,6 +17,7 @@
     <string name="activity_sample_list_ixjava">"IxJava"</string>
     <string name="activity_sample_list_guava">"Guava"</string>
     <string name="activity_sample_list_robolectric">"Robolectric"</string>
+    <string name="activity_sample_list_room">"Room"</string>
 
     <!-- mvp demo -->
     <string name="mvp_demo_activity_login">"Log in"</string>
