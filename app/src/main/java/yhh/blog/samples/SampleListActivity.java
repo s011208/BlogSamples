@@ -50,6 +50,7 @@ public class SampleListActivity extends AppCompatActivity {
 //        items.add(getString(R.string.activity_sample_list_guava));
 //        items.add(getString(R.string.activity_sample_list_robolectric));
 //        items.add(getString(R.string.activity_sample_list_room));
+//        items.add(getString(R.string.activity_sample_list_android_data_binding));
 
 
         ListView listView = (ListView) findViewById(R.id.sample_list);

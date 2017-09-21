@@ -18,6 +18,7 @@
     <string name="activity_sample_list_guava">"Guava"</string>
     <string name="activity_sample_list_robolectric">"Robolectric"</string>
     <string name="activity_sample_list_room">"Room"</string>
+    <string name="activity_sample_list_android_data_binding">"Android Data Binding"</string>
 
     <!-- mvp demo -->
     <string name="mvp_demo_activity_login">"Log in"</string>
