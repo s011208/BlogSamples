@@ -78,6 +78,13 @@
             android:exported="true"
             android:label="@string/activity_sample_list_gson"
             android:process=":gson" />
+
+        <!-- synchronized -->
+        <activity
+            android:name=".sync.SyncActivity"
+            android:exported="true"
+            android:label="@string/activity_sample_list_synchronized"
+            android:process=":sync" />
     </application>
 
 </manifest>

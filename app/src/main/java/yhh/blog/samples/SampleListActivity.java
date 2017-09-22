@@ -17,6 +17,7 @@ import yhh.blog.samples.gson.GsonActivity;
 import yhh.blog.samples.mvp.view.MVPDemoActivity;
 import yhh.blog.samples.okhttp.OkHttpActivity;
 import yhh.blog.samples.rxjava.RxJavaActivity;
+import yhh.blog.samples.sync.SyncActivity;
 
 public class SampleListActivity extends AppCompatActivity {
 
@@ -81,6 +82,9 @@ public class SampleListActivity extends AppCompatActivity {
                         break;
                     case INDEX_GSON:
                         clz = GsonActivity.class;
+                        break;
+                    case INDEX_SYNCHRONIZED:
+                        clz = SyncActivity.class;
                         break;
                     default:
                         throw new UnsupportedOperationException();

@@ -55,4 +55,12 @@
     <!-- ok http -->
     <string name="ok_http_activity_execute_directly">Execute directly</string>
     <string name="ok_http_activity_execute_with_callback">Execute with callback</string>
+
+    <!-- synchronized -->
+    <string name="sync_activity_test_method">"method"</string>
+    <string name="sync_activity_test_static_method">"static method"</string>
+    <string name="sync_activity_test_object">"object"</string>
+    <string name="sync_activity_test_this">"this"</string>
+    <string name="sync_activity_test_synchronized">"Synchronized"</string>
+    <string name="sync_activity_test_asynchronized">"Asynchronized"</string>
 </resources>

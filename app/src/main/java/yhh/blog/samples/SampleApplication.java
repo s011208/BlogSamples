@@ -11,6 +11,7 @@ import yhh.blog.samples.gson.GsonApplication;
 import yhh.blog.samples.mvp.MVPApplication;
 import yhh.blog.samples.okhttp.OkHttpApplication;
 import yhh.blog.samples.rxjava.RxJavaApplication;
+import yhh.blog.samples.sync.SyncApplication;
 
 public class SampleApplication extends Application {
 
@@ -33,6 +34,8 @@ public class SampleApplication extends Application {
                 mApplication = new RxJavaApplication();
             } else if ("yhh.blog.samples:gson".equals(processName)) {
                 mApplication = new GsonApplication();
+            } else if ("yhh.blog.samples:sync".equals(processName)) {
+                mApplication = new SyncApplication();
             }
         }
 
