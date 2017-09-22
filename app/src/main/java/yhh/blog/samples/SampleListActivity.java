@@ -13,6 +13,7 @@ import java.util.List;
 
 import yhh.blog.samples.butterknife.ButterKnifeMainActivity;
 import yhh.blog.samples.dagger2.Dagger2Activity;
+import yhh.blog.samples.gson.GsonActivity;
 import yhh.blog.samples.mvp.view.MVPDemoActivity;
 import yhh.blog.samples.okhttp.OkHttpActivity;
 import yhh.blog.samples.rxjava.RxJavaActivity;
@@ -25,6 +26,7 @@ public class SampleListActivity extends AppCompatActivity {
     private static final int INDEX_OKHTTP = 3;
     private static final int INDEX_RXJAVA = 4;
     private static final int INDEX_GSON = 5;
+    private static final int INDEX_SYNCHRONIZED = 6;
 
 
     @Override
@@ -39,6 +41,7 @@ public class SampleListActivity extends AppCompatActivity {
         items.add(getString(R.string.activity_sample_list_okhttp));
         items.add(getString(R.string.activity_sample_list_rxjava));
         items.add(getString(R.string.activity_sample_list_gson));
+        items.add(getString(R.string.activity_sample_list_synchronized));
 //        items.add(getString(R.string.activity_sample_list_mockito));
 //        items.add(getString(R.string.activity_sample_list_volley));
 
@@ -59,19 +62,30 @@ public class SampleListActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == INDEX_MVP) {
-                    startActivity(new Intent(SampleListActivity.this, MVPDemoActivity.class));
-                } else if (i == INDEX_DAGGER2) {
-                    startActivity(new Intent(SampleListActivity.this, Dagger2Activity.class));
-                } else if (i == INDEX_BUTTERKNIFE) {
-                    startActivity(new Intent(SampleListActivity.this, ButterKnifeMainActivity.class));
-                } else if (i == INDEX_OKHTTP) {
-                    startActivity(new Intent(SampleListActivity.this, OkHttpActivity.class));
-                } else if (i == INDEX_RXJAVA) {
-                    startActivity(new Intent(SampleListActivity.this, RxJavaActivity.class));
-                } else if (i == INDEX_GSON) {
-                    startActivity(new Intent(SampleListActivity.this, RxJavaActivity.class));
+                Class clz;
+                switch (i) {
+                    case INDEX_MVP:
+                        clz = MVPDemoActivity.class;
+                        break;
+                    case INDEX_DAGGER2:
+                        clz = Dagger2Activity.class;
+                        break;
+                    case INDEX_BUTTERKNIFE:
+                        clz = ButterKnifeMainActivity.class;
+                        break;
+                    case INDEX_OKHTTP:
+                        clz = OkHttpActivity.class;
+                        break;
+                    case INDEX_RXJAVA:
+                        clz = RxJavaActivity.class;
+                        break;
+                    case INDEX_GSON:
+                        clz = GsonActivity.class;
+                        break;
+                    default:
+                        throw new UnsupportedOperationException();
                 }
+                startActivity(new Intent(SampleListActivity.this, clz));
             }
         });
     }
