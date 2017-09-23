@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import yhh.blog.samples.butterknife.ButterKnifeApplication;
 import yhh.blog.samples.dagger2.Dagger2Application;
 import yhh.blog.samples.gson.GsonApplication;
+import yhh.blog.samples.leakcanary.LeakCanaryApplication;
 import yhh.blog.samples.mvp.MVPApplication;
 import yhh.blog.samples.okhttp.OkHttpApplication;
 import yhh.blog.samples.rxjava.RxJavaApplication;
@@ -36,6 +37,8 @@ public class SampleApplication extends Application {
                 mApplication = new GsonApplication();
             } else if ("yhh.blog.samples:sync".equals(processName)) {
                 mApplication = new SyncApplication();
+            } else if ("yhh.blog.samples:leak_canary".equals(processName)) {
+                mApplication = new LeakCanaryApplication();
             }
         }
 

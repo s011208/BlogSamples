@@ -3,6 +3,8 @@
     package="yhh.blog.samples">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".SampleApplication"
@@ -85,6 +87,13 @@
             android:exported="true"
             android:label="@string/activity_sample_list_synchronized"
             android:process=":sync" />
+
+        <!-- Leak canary -->
+        <activity
+            android:name=".leakcanary.LeakCanaryActivity"
+            android:exported="true"
+            android:label="@string/activity_sample_list_leak_canary"
+            android:process=":leak_canary" />
     </application>
 
 </manifest>
