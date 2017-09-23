@@ -11,6 +11,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import yhh.blog.samples.android.AndroidActivity;
 import yhh.blog.samples.butterknife.ButterKnifeMainActivity;
 import yhh.blog.samples.dagger2.Dagger2Activity;
 import yhh.blog.samples.gson.GsonActivity;
@@ -30,6 +31,7 @@ public class SampleListActivity extends AppCompatActivity {
     private static final int INDEX_GSON = 5;
     private static final int INDEX_SYNCHRONIZED = 6;
     private static final int INDEX_LEAK_CANARY = 7;
+    private static final int INDEX_ANDROID = 8;
 
 
     @Override
@@ -46,6 +48,7 @@ public class SampleListActivity extends AppCompatActivity {
         items.add(getString(R.string.activity_sample_list_gson));
         items.add(getString(R.string.activity_sample_list_synchronized));
         items.add(getString(R.string.activity_sample_list_leak_canary));
+        items.add(getString(R.string.activity_sample_list_android));
 //        items.add(getString(R.string.activity_sample_list_mockito));
 //        items.add(getString(R.string.activity_sample_list_volley));
 
@@ -90,6 +93,9 @@ public class SampleListActivity extends AppCompatActivity {
                         break;
                     case INDEX_LEAK_CANARY:
                         clz = LeakCanaryActivity.class;
+                        break;
+                    case INDEX_ANDROID:
+                        clz = AndroidActivity.class;
                         break;
                     default:
                         throw new UnsupportedOperationException();

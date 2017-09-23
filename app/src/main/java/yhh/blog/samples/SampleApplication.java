@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.Context;
 import android.support.annotation.Nullable;
 
+import yhh.blog.samples.android.AndroidApplication;
 import yhh.blog.samples.butterknife.ButterKnifeApplication;
 import yhh.blog.samples.dagger2.Dagger2Application;
 import yhh.blog.samples.gson.GsonApplication;
@@ -39,6 +40,8 @@ public class SampleApplication extends Application {
                 mApplication = new SyncApplication();
             } else if ("yhh.blog.samples:leak_canary".equals(processName)) {
                 mApplication = new LeakCanaryApplication();
+            } else if ("yhh.blog.samples:android".equals(processName)) {
+                mApplication = new AndroidApplication();
             }
         }
 

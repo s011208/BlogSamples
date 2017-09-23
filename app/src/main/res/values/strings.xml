@@ -21,6 +21,7 @@
     <string name="activity_sample_list_android_data_binding">"Android Data Binding"</string>
     <string name="activity_sample_list_leak_canary">"LeakCanary"</string>
     <string name="activity_sample_list_synchronized">"Synchronized"</string>
+    <string name="activity_sample_list_android">"Android"</string>
 
     <!-- mvp demo -->
     <string name="mvp_demo_activity_login">"Log in"</string>
@@ -63,4 +64,7 @@
     <string name="sync_activity_test_this">"this"</string>
     <string name="sync_activity_test_synchronized">"Synchronized"</string>
     <string name="sync_activity_test_asynchronized">"Asynchronized"</string>
+
+    <!-- android -->
+    <string name="activity_android_asynctask_leak">"AsyncTask leak"</string>
 </resources>
