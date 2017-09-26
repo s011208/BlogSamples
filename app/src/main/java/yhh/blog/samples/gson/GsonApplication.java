@@ -2,7 +2,7 @@ package yhh.blog.samples.gson;
 
 import android.app.Application;
 
-import yhh.blog.samples.BaseApplication;
+import yhh.commoncomponents.view.BaseApplication;
 
 public class GsonApplication implements BaseApplication {
     @Override

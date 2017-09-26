@@ -2,7 +2,7 @@ package yhh.blog.samples.sync;
 
 import android.app.Application;
 
-import yhh.blog.samples.BaseApplication;
+import yhh.commoncomponents.view.BaseApplication;
 
 public class SyncApplication implements BaseApplication {
     @Override

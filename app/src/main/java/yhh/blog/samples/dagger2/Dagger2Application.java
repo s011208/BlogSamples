@@ -4,7 +4,7 @@ import android.app.Application;
 
 import javax.inject.Inject;
 
-import yhh.blog.samples.BaseApplication;
+import yhh.commoncomponents.view.BaseApplication;
 import yhh.blog.samples.dagger2.component.ApplicationComponent;
 import yhh.blog.samples.dagger2.component.DaggerApplicationComponent;
 import yhh.blog.samples.dagger2.module.ApplicationModule;

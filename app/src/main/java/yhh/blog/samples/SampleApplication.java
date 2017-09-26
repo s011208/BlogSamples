@@ -14,6 +14,7 @@ import yhh.blog.samples.mvp.MVPApplication;
 import yhh.blog.samples.okhttp.OkHttpApplication;
 import yhh.blog.samples.rxjava.RxJavaApplication;
 import yhh.blog.samples.sync.SyncApplication;
+import yhh.commoncomponents.view.BaseApplication;
 
 public class SampleApplication extends Application {
 

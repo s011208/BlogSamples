@@ -5,7 +5,7 @@ import android.app.Application;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
-import yhh.blog.samples.BaseApplication;
+import yhh.commoncomponents.view.BaseApplication;
 
 public class LeakCanaryApplication implements BaseApplication {
     private RefWatcher mRefWatcher;

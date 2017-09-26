@@ -2,7 +2,7 @@ package yhh.blog.samples.butterknife;
 
 import android.app.Application;
 
-import yhh.blog.samples.BaseApplication;
+import yhh.commoncomponents.view.BaseApplication;
 
 public class ButterKnifeApplication implements BaseApplication {
     @Override

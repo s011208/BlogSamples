@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.squareup.leakcanary.LeakCanary;
 
-import yhh.blog.samples.BaseApplication;
+import yhh.commoncomponents.view.BaseApplication;
 
 public class AndroidApplication implements BaseApplication {
     @Override

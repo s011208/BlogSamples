@@ -1,4 +1,4 @@
-package yhh.blog.samples;
+package yhh.commoncomponents.view;
 
 import android.app.Application;
 
