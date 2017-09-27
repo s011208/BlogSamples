@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">"runtime.permission"</string>
+    <string name="activity_sample_list_permission">"Runtime permission"</string>
+    <string name="activity_runtime_permission_request_rw">"Request read and write permission"</string>
+    <string name="activity_runtime_permission_request_fine_location">"Request fine location permission"</string>
+
+    <string name="activity_runtime_permission_already_get_permissions">"Already get permissions"</string>
+    <string name="activity_runtime_permission_rational">"Give me permissions!!"</string>
+
+    <string name="activity_runtime_permission_start_settings">"Open permission settings"</string>
+</resources>

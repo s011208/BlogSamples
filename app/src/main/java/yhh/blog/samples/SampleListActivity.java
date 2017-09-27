@@ -20,6 +20,7 @@ import yhh.blog.samples.mvp.view.MVPDemoActivity;
 import yhh.blog.samples.okhttp.OkHttpActivity;
 import yhh.blog.samples.rxjava.RxJavaActivity;
 import yhh.blog.samples.sync.SyncActivity;
+import yhh.runtimepermission.RuntimePermissionActivity;
 
 public class SampleListActivity extends AppCompatActivity {
 
@@ -32,6 +33,7 @@ public class SampleListActivity extends AppCompatActivity {
     private static final int INDEX_SYNCHRONIZED = 6;
     private static final int INDEX_LEAK_CANARY = 7;
     private static final int INDEX_ANDROID = 8;
+    private static final int INDEX_PERMISSION = 9;
 
 
     @Override
@@ -49,13 +51,14 @@ public class SampleListActivity extends AppCompatActivity {
         items.add(getString(R.string.activity_sample_list_synchronized));
         items.add(getString(R.string.activity_sample_list_leak_canary));
         items.add(getString(R.string.activity_sample_list_android));
+        items.add(getString(R.string.activity_sample_list_permission));
 //        items.add(getString(R.string.activity_sample_list_mockito));
 //        items.add(getString(R.string.activity_sample_list_volley));
 
 //        items.add(getString(R.string.activity_sample_list_async));
 //        items.add(getString(R.string.activity_sample_list_jackson));
 //        items.add(getString(R.string.activity_sample_list_retrofit));
-//        items.add(getString(R.string.activity_sample_list_permission));
+
 //        items.add(getString(R.string.activity_sample_list_ixjava));
 //        items.add(getString(R.string.activity_sample_list_guava));
 //        items.add(getString(R.string.activity_sample_list_robolectric));
@@ -96,6 +99,9 @@ public class SampleListActivity extends AppCompatActivity {
                         break;
                     case INDEX_ANDROID:
                         clz = AndroidActivity.class;
+                        break;
+                    case INDEX_PERMISSION:
+                        clz = RuntimePermissionActivity.class;
                         break;
                     default:
                         throw new UnsupportedOperationException();

@@ -15,6 +15,7 @@ import yhh.blog.samples.okhttp.OkHttpApplication;
 import yhh.blog.samples.rxjava.RxJavaApplication;
 import yhh.blog.samples.sync.SyncApplication;
 import yhh.commoncomponents.view.BaseApplication;
+import yhh.runtimepermission.RunTimePermissionApplication;
 
 public class SampleApplication extends Application {
 
@@ -43,6 +44,8 @@ public class SampleApplication extends Application {
                 mApplication = new LeakCanaryApplication();
             } else if ("yhh.blog.samples:android".equals(processName)) {
                 mApplication = new AndroidApplication();
+            } else if ("yhh.blog.samples:runtime_permission".equals(processName)) {
+                mApplication = new RunTimePermissionApplication();
             }
         }
 
